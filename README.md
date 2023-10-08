@@ -34,6 +34,7 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ## Credits
 
+Daniel Zuzevich, https://dzuz14.medium.com/code-a-full-width-hero-background-image-with-transparent-overlay-95d757f8ff2c
 List your collaborators, if any, with links to their GitHub profiles.
 
 If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
