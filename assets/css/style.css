@@ -1,28 +1,42 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Roboto, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     line-height: 1.2;
+    max-width: 100%;
+}
+
+h2, h4 {
+    text-decoration: underline solid rgb(190, 187, 187);
 }
 
 header {
     display: block;
     flex-wrap: wrap;
     padding: 20px;
+    padding-bottom: 70px;
     background-color: black;
     color: whitesmoke;
     align-items: center;
     justify-content: space-between;
-}
-
-header p {
-    position: absolute;
+    width: 100%;
 }
 
 h1 {
-    position:absolute;
     font-size: 200%;
-    top: 171px;
+    top: 150px;
+    right: 50px;
+    display: flex;
+}
+
+h3 {
+    text-decoration: none;
 }
 
 a {
@@ -33,44 +47,177 @@ a {
 nav ul {
     display: flex;
     justify-content: space-between;
+    position: absolute;
+    top: 228px;
+    right: 21px;
     min-width: 300px;
     float: right;
+}
+
+main {
+    background-color: rgba(78, 77, 77, 0.874);
+    color: whitesmoke;
+    width: 100%;
 }
 
 footer {
     display: block;
     align-items: end;
+    justify-content: space-between;
+    line-height: 30px;
+    background-color: black;
+    color: whitesmoke;
+}
 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+}
+
+.justify-center {
+    justify-content: center;
 }
 
 .circular-portrait {
-    display: inline-block;
+    display: block;
     position: absolute;
-    width: 100px;
+    object-fit: contain;
+    width: 110px;
     height: 150px;
-    overflow:hidden;
-    border-radius: 10%;
     top: 20px;
 }
 
 .circular-portrait img {
     width: 100%;
-    height: auto;
-    margin-bottom: -25px;
+    position: absolute;
+    top: -20px;
 }
 
 .section-links {
     float: right;
-
 }
 
-.refactor {
+.about-me-column {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    transition: flex-basis 500ms linear;
+    margin-bottom: 0;
+}
+
+.about-me {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding: 1rem 2rem 0rem 2rem;
+}
+
+.about-me .about-me-header {
     position: relative;
-    background-size: contain;
-    
+    align-items: center;
+    margin: -1.5rem 0 -2.5rem 0;
+    padding: 0.5rem 1rem;
+    font-size: 150%;  
 }
 
-.img {
+.work {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 10px 40px 10px 40px;
+}
+
+.work-header {
+    position: relative;
+    padding: 10px;
+    font-size: 150%;
+}
+
+.image-wrapper {
+    position: relative;
+    margin-bottom: 30px;
+    width: 100%;   
+}
+
+.js-wrapper {
+    position: relative;
+    width: 47%;
+}
+
+.ph-wrapper {
+    position: relative;
+    width: 47%;
+    padding-left: 15px;
+}
+
+.work-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.overlay {
+    position: absolute;
+    display: flex;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay-header-base {
+    position: relative;
+    left: 0;
+    top: 190px;
+    align-items:bottom;
+    justify-content: center;
+}
+
+.refactor-h3 {
+    font-size: 200%;
+    color: rgb(253, 252, 251);
+    opacity: 1.0;
+    font-weight:900;
+}
+
+.js-h3 {
+    font-size: 125%;
+    color: black;
+    font-weight: 900;
+}
+
+.refactor-img {
+    width: 100%;
+    margin: 0;
+}
+
+.js-img {
+    width: 100%;
+    margin: 0;
+}
+
+.placeholder-img {
+    width: 100%;
+    margin: 0;
+}
+
+.ph-h3 {
+    font-size: 125%;
+    font-weight: 900;
+}
+
+.header-img {
     height: 20vh;
     max-width: 100vw;
     position: relative;
@@ -79,7 +226,7 @@ footer {
     background-image: url("../../Images/patrick-tomasso-5hvn-2WW6rY-unsplash.jpg");
 }
 
-.img-overlay {
+.header-img-overlay {
     position: absolute;
     font-size: 150%;
     height: 100%;
@@ -96,4 +243,23 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.grow {
+    transition: all .2s ease-in-out;
+    opacity: 0.8;
+}
+
+.link-grow {
+    transition: all .2s ease-in-out
+}
+
+.grow:hover {
+    box-shadow: inset 0px 0px 8px rgb(222, 220, 216), 0 0 15px rgb(253, 253, 252);
+    transform: scale(1.05);
+    opacity: 1.0;
+}
+
+.link-grow:hover {
+    transform: scale(1.3);
 }
