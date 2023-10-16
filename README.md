@@ -18,12 +18,8 @@ Click on the image(s) in the "Work" section to be taken to other web apps that I
 
 Feel free to use my contact information and provide feedback. I am always looking to improve!
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
-
+![Web app home screen](./Images/Portfolio%20Home.jpg)
+   
 ## Credits
 
 Daniel Zuzevich, https://dzuz14.medium.com/code-a-full-width-hero-background-image-with-transparent-overlay-95d757f8ff2c
