@@ -45,11 +45,10 @@ a {
 
 nav ul {
     display: flex;
-    justify-content: space-between;
-    align-items: end;
+    justify-content: space-evenly;
+    align-items: center;
     flex-wrap: wrap;
-    width: 30vw;
-    float: right;
+    width: 100%;
 }
 
 footer ul {
@@ -100,7 +99,10 @@ footer {
 }
 
 .section-links {
-    float: right;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-me-column {
